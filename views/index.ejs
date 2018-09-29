@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emilian Sulicz - Online Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css", href="app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/7osGB1A.png" />
+</head>
+
+<body>
+<a href="#" id="scroll" style="display: none;"><span></span></a>
+<div id="top" class="first-container">
+    <div class="nav-container">
+        <nav class="nav-row">
+            <div class="nav-controls">
+                <a href="#top">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#resume">RESUME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </div>
+    <h2 id="welcome">Hi! My name is <br><span>Emilian Sulicz</span></span><br>Welcome to my page!</h2>
+</div>
+
+<div id="about" class="container">
+    <div class="row">
+        <h1>
+            About Me
+        </h1>
+        <p>
+            <img class="sectionPic" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/11044603_871572182894190_4885775544665241334_n.jpg?_nc_cat=111&oh=b6e63601b42db5239f4a2430343c6a56&oe=5C5FD3A6"/>
+            I was born in 1993, in a small town Racibórz, Silesia, Poland. I have spent there first 18 years of my life making friends for life,
+            educating in best schools available and generally living a pleasant life. After scoring almost maximum points on high school final
+            exams I had decided to use this opportunity and enrolled on AGH – one of the best technical academia in Poland, to study mechatronics.
+            At the same time I was developing my career as a snowboard instructor. After a few months of studying in Cracow I came to  conclusion
+            that doing both – studying and working as an instructor, I’ll get nowhere with any of those two. So I decided to finish a semester in
+            order to leave studies instead of being expelled and proceeded with my career in sports. Next few months I took both passive and active
+            participation on International Ski Instructor Association, became snowboard trainer and ski and kite surfing instructor. I enrolled in
+            managerial studies which complemented my experience-based knowledge about motivating and managing people as well as being a leader with
+            theories and important background knowledge. I graduated Jagiellonian University in 2016 as a bachelor in Management. Sadly, in the
+            meantime I suffered from a spine injury, which basically made it impossible for me to advance my instructor’s career any further.
+            That’s when I decided to get a use of my often over-analyzing and over-mathematical brain and rebrand myself to a software developer.
+            While I surely miss some elements of instructor’s life I am also very engaged into learning programming and excited about new, almost
+            unlimited development possibilities. I believe that skills I acquired as an instructor will come to use in the future of my programmer’s
+            career. As for now, in 2018, I am graduating from a master studies in Business and Finance Management and I’m studying Software Engineering
+            and Business Tools where I learn about important background software-development knowledge, both on Jagiellonian University. I try to divide my
+            time mostly between two things: rock climbing which became my newly found passion and programming which proved to be wonderfully intellectually challenging.
+            I have learned basics of Java and Python both on studies and via MOOC platforms like edx.org but I feel most positive with web development. JavaScript for
+            the win! I can’t wait to see what the future will bring.
+        </p>
+    </div>
+</div>
+
+<div class="parallax firstHorizontal"></div>
+
+<div id="resume" class="container">
+    <div class="row">
+        <h1>
+            Resume
+        </h1>
+        <p>
+            Choose a language version below. Click the image to view the PDF in a new tab.
+        </p>
+        <button id="changeLanguage">Change language to <span id="language">Polish</span></button>
+        <div id="cvdiv">
+            <a id="cvLink" class="eng" href="https://drive.google.com/file/d/1uP-JKGdVHehyAYAjJkBJlXccopwjprNo/view?usp=sharing" target="_blank">
+                <img id="cvPic" src="https://i.imgur.com/uy7hbJQ.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="parallax secondHorizontal"></div>
+
+<div id="projects" class="container">
+    <div class="row">
+        <h1>
+            Projects
+        </h1>
+        <p>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz">Visit my GitHub repository</a> or view individual projects below.
+        </p>
+        <div class="project">
+            <img class="sectionPic" src="https://i.imgur.com/47xEQXa.jpg"/>
+            <div class="projDesc">
+                <h1>YelpCamp</h1>
+                <p>In this app logged-in users can add new campgrounds to the database, comment on them and view other users.</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://shrouded-waters-42597.herokuapp.com/">Link to the deployed page</a> (on heroku server)</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/YelpCamp">Link to github</a></p>
+                <p>Technologies and frameworks used:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Node.js, Express</li>
+                    <li>jQuery, Bootstrap</li>
+                    <li>MongoDB</li>
+                    <li>Passport</li>
+                    <li>Flash</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="project">
+            <img class="sectionPic" src="https://i.imgur.com/HmfZSHx.jpg"/>
+            <div class="projDesc">
+                <h1>Resume Page</h1>
+                <p>Simple personal online resume</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://guarded-dawn-89391.herokuapp.com/">Link to the deployed page</a> (on heroku server)</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/ES_Resume">Link to github</a></p>
+                <p>Technologies used:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Express</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="project">
+            <img class="sectionPic" src="https://i.imgur.com/NR0EFrK.jpg"/>
+            <div class="projDesc">
+                <h1>RGB Game</h1>
+                <p>A small, fun game where user has to guess a color by it's rgb signature</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/RGB_Game">Link to github</a></p>
+                <p>Technologies used:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="project">
+            <img class="sectionPic" src="https://i.imgur.com/2GJVqPM.jpg"/>
+            <div class="projDesc">
+                <h1>Patatap Clone</h1>
+                <p>Clone of a fun online app</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/Patatap_Clone">Link to github</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://patatap.com/">Link to the original page</a></p>
+                <p>Technologies used:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Paper.js</li>
+                    <li>Howler.js</li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <div class="project">
+            <img class="sectionPic" src="https://i.imgur.com/ZW69QRJ.jpg"/>
+            <div class="projDesc">
+                <h1>ToDo App</h1>
+                <p>ToDo App that allows user to add, cross and delete positions</p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/TodoApp">Link to github</a></p>
+                <p>Technologies used:</p>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="parallax thirdHorizontal"></div>
+
+<div id="contact" class="container">
+    <div class="row">
+        <h1>
+            Contact
+        </h1>
+        <p>
+            <i class="fas fa-at"></i> emilian.sulicz@gmail.com
+        </p>
+        <p>
+            <i class="fas fa-phone-square"></i> 668 316 906
+        </p>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/emilian-sulicz-47b781153/"><p>
+                <i class="fab fa-linkedin"></i> Find me on LinkedIn
+            </p>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz">
+            <p>
+                <i class="fab fa-github-square"></i> Find Me On GitHub
+            </p>
+        </a>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
