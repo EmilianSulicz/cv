@@ -1,4 +1,4 @@
-//changing navbar
+//changing navbar class
 $(document).ready(function() {
 
     $(window).scroll(function() {
@@ -72,14 +72,34 @@ $(document).ready(function(){
 
 //change CV language button
 $("#changeLanguage").on("click", function(){
-    if  ($("#language").html() === "Polish") {
-        $("#cvLink").attr("href", "https://drive.google.com/file/d/1iFpxBRIizhwNIIquJBKGiWy7S6PFI01K/view?usp=sharing")
+    if  ($("#cvLink").attr("href") === "https://drive.google.com/file/d/1wGx-tFT60y6g7MTYKvfiMyr3-0GjbhAk/view?usp=sharing") {
+        $("#cvLink").attr("href", "https://drive.google.com/file/d/19o36mBdI50PzlC2GAbVX4nwG1mxmIUQD/view?usp=sharing");
         $("#language").html("English");
-        $("#cvPic").attr("src", "https://i.imgur.com/ASe7tD2.jpg");
+        $("#cvPic").attr("src", "https://i.imgur.com/yr0bF9y.jpg");
     }
     else {
-        $("#cvLink").attr("href", "https://drive.google.com/file/d/1uP-JKGdVHehyAYAjJkBJlXccopwjprNo/view?usp=sharing")
+        $("#cvLink").attr("href", "https://drive.google.com/file/d/1wGx-tFT60y6g7MTYKvfiMyr3-0GjbhAk/view?usp=sharing");
         $("#language").html("Polish");
-        $("#cvPic").attr("src", "https://i.imgur.com/uy7hbJQ.jpg");
+        $("#cvPic").attr("src", "https://i.imgur.com/4CcnGnj.jpg");
     }
 });
+
+//Load more button
+$(".project").slice(0, 2).show().css("opacity", 1);
+$("#loadMore").on('click', function (e)
+{
+    e.preventDefault();
+    if($("#loadMore").html() === "Show more")
+    {
+        $(".project:hidden").slice(0, 4).show(function() {
+                $(".project").css("opacity", 1);
+            }
+        );
+        $("#loadMore").html("Show less");
+    }
+    else
+    {
+        $(".project").slice(2, 8).css("opacity", 0).hide();
+        $("#loadMore").html("Show more");
+    }
+})

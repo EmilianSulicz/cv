@@ -11,10 +11,10 @@
 
 <body>
 <a href="#" id="scroll" style="display: none;"><span></span></a>
-<div id="top" class="first-container">
-    <div class="nav-container">
+<div id="top" class="first-container centered">
+    <div class="nav-container centered">
         <nav class="nav-row">
-            <div class="nav-controls">
+            <div class="nav-controls centered">
                 <a href="#top">HOME</a>
                 <a href="#about">ABOUT</a>
                 <a href="#resume">RESUME</a>
@@ -32,7 +32,7 @@
             About Me
         </h1>
         <p>
-            <img class="sectionPic" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/11044603_871572182894190_4885775544665241334_n.jpg?_nc_cat=111&oh=b6e63601b42db5239f4a2430343c6a56&oe=5C5FD3A6"/>
+            <img class="sectionPic" id="face" src="https://i.imgur.com/XMV6Oq3.jpg"/>
             I was born in 1993, in a small town Racibórz, Silesia, Poland. I have spent there first 18 years of my life making friends for life,
             educating in best schools available and generally living a pleasant life. After scoring almost maximum points on high school final
             exams I had decided to use this opportunity and enrolled on AGH – one of the best technical academia in Poland, to study mechatronics.
@@ -55,9 +55,9 @@
     </div>
 </div>
 
-<div class="parallax firstHorizontal"></div>
+<div class="parallax" id="firstHorizontal"></div>
 
-<div id="resume" class="container">
+<div id="resume" class="container centered">
     <div class="row">
         <h1>
             Resume
@@ -65,16 +65,16 @@
         <p>
             Choose a language version below. Click the image to view the PDF in a new tab.
         </p>
-        <button id="changeLanguage">Change language to <span id="language">Polish</span></button>
+        <button class="button" id="changeLanguage">Change language to <span id="language">Polish</span></button>
         <div id="cvdiv">
-            <a id="cvLink" class="eng" href="https://drive.google.com/file/d/1uP-JKGdVHehyAYAjJkBJlXccopwjprNo/view?usp=sharing" target="_blank">
-                <img id="cvPic" src="https://i.imgur.com/uy7hbJQ.jpg">
+            <a id="cvLink" class="eng" href="https://drive.google.com/file/d/1wGx-tFT60y6g7MTYKvfiMyr3-0GjbhAk/view?usp=sharing" target="_blank">
+                <img id="cvPic" src="https://i.imgur.com/4CcnGnj.jpg">
             </a>
         </div>
     </div>
 </div>
 
-<div class="parallax secondHorizontal"></div>
+<div class="parallax" id="secondHorizontal"></div>
 
 <div id="projects" class="container">
     <div class="row">
@@ -96,30 +96,27 @@
                     <li>HTML, CSS, JavaScript</li>
                     <li>Node.js, Express</li>
                     <li>jQuery, Bootstrap</li>
-                    <li>MongoDB</li>
-                    <li>Passport</li>
+                    <li>MongoDB, Passport</li>
                     <li>Flash</li>
                 </ul>
             </div>
         </div>
-        <hr/>
+
         <div class="project">
-            <img class="sectionPic" src="https://i.imgur.com/HmfZSHx.jpg"/>
+            <img class="sectionPic" src="https://i.imgur.com/cSC6Pyz.jpg"/>
             <div class="projDesc">
                 <h1>Resume Page</h1>
                 <p>Simple personal online resume</p>
                 <p><a target="_blank" rel="noopener noreferrer" href="https://guarded-dawn-89391.herokuapp.com/">Link to the deployed page</a> (on heroku server)</p>
-                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/ES_Resume">Link to github</a></p>
+                <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/EmilianSulicz/cv">Link to github</a></p>
                 <p>Technologies used:</p>
                 <ul>
                     <li>HTML, CSS, JavaScript</li>
                     <li>jQuery</li>
-                    <li>Express</li>
-                    <li>Node.js</li>
+                    <li>Node.js, Express</li>
                 </ul>
             </div>
         </div>
-        <hr/>
         <div class="project">
             <img class="sectionPic" src="https://i.imgur.com/NR0EFrK.jpg"/>
             <div class="projDesc">
@@ -133,7 +130,6 @@
                 </ul>
             </div>
         </div>
-        <hr/>
         <div class="project">
             <img class="sectionPic" src="https://i.imgur.com/2GJVqPM.jpg"/>
             <div class="projDesc">
@@ -150,7 +146,6 @@
                 </ul>
             </div>
         </div>
-        <hr/>
         <div class="project">
             <img class="sectionPic" src="https://i.imgur.com/ZW69QRJ.jpg"/>
             <div class="projDesc">
@@ -164,11 +159,13 @@
                 </ul>
             </div>
         </div>
-
+        <div class="centered">
+            <button class="button" id="loadMore">Show more</button>
+        </div>
     </div>
 </div>
 
-<div class="parallax thirdHorizontal"></div>
+<div class="parallax" id="thirdHorizontal"></div>
 
 <div id="contact" class="container">
     <div class="row">

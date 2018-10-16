@@ -6,6 +6,9 @@ body {
     -webkit-font-smoothing: antialiased;
     margin: 0;
 }
+.centered {
+    text-align: center;
+}
 .nav-controls a {
     display: inline-block;
     list-style: none;
@@ -19,14 +22,14 @@ body {
     transition: opacity 0.125s linear;
 }
 .first-container {
-    background: url("https://i.imgur.com/AsHIikP.jpg") no-repeat center center;
+    background: url("https://i.imgur.com/VBzfEU4.jpg") no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 100%;
-    text-align: center;
+    position:relative;
 }
 .nav-container {
     height: 58px;
@@ -34,11 +37,10 @@ body {
     position: fixed;
     letter-spacing: 0.025em;
     transition: background-color 0.2s linear;
-    text-align: center;
     z-index: 999;
 }
 .nav-container.solid-nav {
-    background-color: #145768;
+    background-color: #37393d;
 }
 .nav-container .nav-row {
     max-width: 1200px;
@@ -46,9 +48,7 @@ body {
     margin: 0 auto;
     padding-top: 20px;
 }
-.nav-container .nav-row .nav-controls {
-    text-align: center;
-}
+
 .nav-controls a {
     display: inline-block;
     padding: 0 20px;
@@ -71,7 +71,7 @@ body {
     cursor:pointer;
     width:50px;
     height:50px;
-    background-color:#145768;
+    background-color:#4b4c4f;
     text-indent:-9999px;
     display:none;
     -webkit-border-radius:60px;
@@ -91,16 +91,15 @@ body {
     border-bottom-color:#ffffff;
 }
 #scroll:hover {
-    background-color:#27b4d0;
+    background-color:#7c7e84;
 }
 #welcome {
     color: white;
     font-weight: 400;
+    width: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -350px;
-    margin-top: -300px;
+    left: 0;;
+    top: 30%;
     z-index: 1;
 }
 #welcome span{
@@ -113,31 +112,21 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.firstHorizontal {
-    background-image: url("https://i.imgur.com/aqCKILe.jpg");
+#firstHorizontal {
+    background-image: url("https://i.imgur.com/t541Cse.jpg");
 }
-.secondHorizontal {
-    background-image: url("https://i.imgur.com/eZAcgC7.jpg");
+#secondHorizontal {
+    background-image: url("https://i.imgur.com/KGrAR54.jpg");
 }
-.thirdHorizontal {
-    background-image: url("https://i.imgur.com/XOGNaev.jpg");
+#thirdHorizontal {
+    background-image: url("https://i.imgur.com/iQkaSyg.jpg");
+    height: 50%;
 }
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-#resume {
-    text-align: center;
-}
-#changeLanguage {
+.button {
     border: 0;
     color: white;
     font-size: 1em;
-    background-color: #145768;
+    background-color: #37393d;
     height: 40px;
     width: 300px;
     margin: 20px 0;
@@ -147,13 +136,13 @@ hr {
     0 3px 13px -1px rgba(0,0,0,0.21);
     transition: 0.2s linear;
 }
-#changeLanguage:hover {
+.button:hover {
     opacity: 0.8;
 }
-#changeLanguage:focus {
+.button:focus {
     outline: none;
 }
-#changeLanguage:active {
+.button:active {
     top: 1px;
     position: relative;
 }
@@ -171,14 +160,24 @@ hr {
     max-width: 400px;
     height: auto;
     float: left;
-    margin: 25px 20px 25px 0;
+    margin: 25px 20px 0 0;
 }
 #about p {
     text-indent: 2em;
 }
+#face {
+    margin-bottom: 25px;
+    margin-top: 0;
+    max-width: 300px;
+}
 .project {
-    display: inline-block;
-    width: 100%
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display:none;
+    opacity: 0;
+    padding-bottom: 20px;
+    transition: opacity 0.5s linear;
 }
 .project ul {
     margin-left: -20px;
@@ -191,7 +190,8 @@ hr {
     color: inherit;
 }
 #contact {
-    background: #145768;
+    height: 35%;
+    background: #37393d;
     color: white;
 }
 #contact p {
